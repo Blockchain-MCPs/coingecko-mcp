@@ -1,6 +1,6 @@
 # CoinGecko MCP Server
 
-> This project is a fork of [pycoingecko](https://github.com/man-c/pycoingecko)
+> This project is a fork of [pycoingecko](https://github.com/man-c/pycoingecko).  
 > CoinGecko MCP Server wraps PyCoinGecko which wraps CoinGecko API. All in Python <3
 
 ### How to run CoinGecko MCP Server
