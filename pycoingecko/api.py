@@ -140,7 +140,7 @@ class CoinGeckoAPI:
     def get_coins(self, **kwargs):
         """List all coins with data (name, price, market, developer, community, etc)"""
 
-        api_url = '{0}coins'.format(self.api_base_url)
+        api_url = '{0}coins/list'.format(self.api_base_url)
         # ['order', 'per_page', 'page', 'localization']
         # api_url = self.__api_url_params(api_url, kwargs)
 
