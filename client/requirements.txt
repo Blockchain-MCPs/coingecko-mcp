@@ -1,0 +1,13 @@
+langchain
+langchain-mcp-adapters
+langchain-community
+langchain_openai
+langchain-google-vertexai
+langchain-google-genai
+langchain-anthropic
+langchain_together
+langgraph
+mcp
+mcp[cli]
+python-dotenv
+streamlit

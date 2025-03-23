@@ -1,0 +1,249 @@
+/* CSS Variables for themes */
+:root {
+    --dark-bg: linear-gradient(to bottom right, #1a1a2e, #16213e, #1a1a2e);
+    --light-bg: linear-gradient(to bottom right, #f0f2f5, #e6e9f0, #f0f2f5);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    color: white;
+    background: var(--dark-bg) !important;
+}
+
+.dark-mode .stApp {
+    background: var(--dark-bg) !important;
+    color: white;
+}
+
+.dark-mode [data-testid="stAppViewContainer"] {
+    background: var(--dark-bg) !important;
+    color: white;
+}
+
+.dark-mode [data-testid="stHeader"] {
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+.dark-mode [data-testid="stToolbar"] {
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+.dark-mode [data-testid="stSidebar"] {
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+.dark-mode [data-testid="stSidebarContent"] {
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
+.dark-mode .stButton > button {
+    background: linear-gradient(to right, #4834d4, #686de0);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .stButton > button:hover {
+    background: linear-gradient(to right, #686de0, #4834d4);
+    transform: translateY(-2px);
+}
+
+.dark-mode .output-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .error-message {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+.dark-mode .server-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dark-mode .status-icon {
+    font-size: 1.2rem;
+}
+
+/* Dark mode styling for Streamlit components */
+.dark-mode .stTextInput > div > div > input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .stTextArea > div > div > textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .stSelectbox > div > div > div {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .stMarkdown {
+    color: #f0f0f0;
+}
+
+.dark-mode .stCodeBlock {
+    background-color: #2d3748;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .stExpander {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .stDataFrame {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .stDataFrame table {
+    color: #f0f0f0;
+}
+
+.dark-mode .stDataFrame th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.dark-mode .stDataFrame td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .css-1d391kg, .dark-mode .css-12oz5g7 {
+    background-color: rgba(26, 26, 46, 0.9);
+}
+
+/* Light Mode Styles */
+.light-mode {
+    color: #333;
+    background: var(--light-bg) !important;
+}
+
+.light-mode .stApp {
+    background: var(--light-bg) !important;
+    color: #333;
+}
+
+.light-mode [data-testid="stAppViewContainer"] {
+    background: var(--light-bg) !important;
+    color: #333;
+}
+
+.light-mode [data-testid="stHeader"] {
+    background: rgba(240, 242, 245, 0.8) !important;
+}
+
+.light-mode [data-testid="stToolbar"] {
+    background: rgba(240, 242, 245, 0.8) !important;
+}
+
+.light-mode [data-testid="stSidebar"] {
+    background: rgba(240, 242, 245, 0.8) !important;
+}
+
+.light-mode [data-testid="stSidebarContent"] {
+    background: rgba(240, 242, 245, 0.8) !important;
+}
+
+.light-mode .stButton > button {
+    background: linear-gradient(to right, #4834d4, #686de0);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.light-mode .stButton > button:hover {
+    background: linear-gradient(to right, #686de0, #4834d4);
+    transform: translateY(-2px);
+}
+
+.light-mode .output-container {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .error-message {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+.light-mode .server-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.light-mode .status-icon {
+    font-size: 1.2rem;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Style for the theme toggle button in sidebar */
+.dark-mode [data-testid="stSidebar"] [data-testid="baseButton-secondary"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dark-mode [data-testid="stSidebar"] [data-testid="baseButton-secondary"]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.light-mode [data-testid="stSidebar"] [data-testid="baseButton-secondary"] {
+    background: rgba(0, 0, 0, 0.05);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.light-mode [data-testid="stSidebar"] [data-testid="baseButton-secondary"]:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+} 

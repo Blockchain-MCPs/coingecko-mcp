@@ -3,6 +3,35 @@
 > This project is a fork of [pycoingecko](https://github.com/man-c/pycoingecko)
 > CoinGecko MCP Server wraps PyCoinGecko which wraps CoinGecko API. All in Python <3
 
+### How to run CoinGecko MCP Server
+1. `pip install mcp`
+2. `pip install pycoingecko`  -- or use the current local version
+3. `python server.py`
+
+### How to test CoinGecko MCP Server via the Streamlit Client
+1. `cd client`
+2. `pip install -r requirements.txt`
+3. `streamlit run ui.py`
+4. Edit your .env file to put your OpenAI API KEY
+4. Interact with the ChatBot.
+
+![CG-Client](./img/CoinGecko-MCP-Client.png)
+
+
+### How to add CoinGecko MCP Server to Cursor
+1. Clone this repo
+2. pip install mcp and pycoingecko in your general python environment (the one Cursor will use)
+2. Edit your Cursor MCP settins:
+```json
+    "coingecko": {
+      "command": "python3",
+      "args": ["[full path to the root folder]/server.py"],
+      "env": {
+        "COINGECKO_API_KEY": "... [YOUR API KEY] ..."
+      }
+    }
+```
+
 ---
 
 ## CoinGecko API wrapper Docs
