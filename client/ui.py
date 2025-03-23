@@ -292,6 +292,42 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+# Chat input
+if prompt := st.chat_input("Ask me anything about cryptocurrencies..."):
+    # Add user message to chat
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    
+    # Show assistant response
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            try:
+                # Run the agent
+                response = run_async(run_mcp_agent(prompt))
+                logger.info(f"Response to display: {response}")
+
+                # Display the response
+                if response:
+                    st.markdown(response, unsafe_allow_html=True)
+                    st.session_state.messages.append(
+                        {"role": "assistant", "content": response}
+                    )
+                else:
+                    st.error("No response received from the agent")
+
+            except Exception as e:
+                error_msg = f"Error: {str(e)}"
+                st.markdown(
+                    f'<div class="error-message">{error_msg}</div>',
+                    unsafe_allow_html=True,
+                )
+                logger.error(f"Error running MCP agent: {e}")
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": error_msg}
+                )
+        st.rerun()
+
 # Sidebar with MCP server status and tools
 with st.sidebar:
     st.header("CoinGecko API Status")
