@@ -1,4 +1,12 @@
-# CoinGecko API wrapper
+# CoinGecko MCP Server
+
+>>> This project is a fork of [pycoingecko](https://github.com/man-c/pycoingecko) <<<
+CoinGecko MCP Server wraps PyCoinGecko which wraps CoinGecko API. All in Python <3
+
+---
+
+## CoinGecko API wrapper Docs
+
 [![PyPi Version](https://img.shields.io/pypi/v/pycoingecko.svg)](https://pypi.python.org/pypi/pycoingecko/)
 ![GitHub](https://img.shields.io/github/license/man-c/pycoingecko)
 
